@@ -414,6 +414,7 @@ export default {
     changeLang(lang) {
       this.languageTitle = lang[1] ? lang[1] : lang[0];
       this.languageClass = "language-" + lang[0];
+      this.languageFilename = lang[2] ? lang[2] : "code.txt";
       this.$emit("lang", lang[0]);
     },
     setLanguage(displayLangName) {
