@@ -1,4 +1,0 @@
-https://github.com/justcaliturner/simple-code-editor
-License: MIT (according to package.json)
-- CodeEditor.vue
-- CodeEditor/CopyCode.vue

@@ -622,7 +622,6 @@ export default {
   z-index: 1;
   top: 0;
   left: 0;
-  overflow-y: hidden;
   box-sizing: border-box;
   caret-color: rgb(127, 127, 127);
   color: transparent;
@@ -669,13 +668,16 @@ export default {
     cursor: text;
     font-family: "MesloLGS Nerd Font Mono", SFMono-Regular, "SF Mono", "Cascadia Mono", Menlo,
       Consolas, "JetBrains Mono", "Liberation Mono", "Courier New", Courier, monospace;
+    $scrollbar-width: 8px;
     &::-webkit-scrollbar {
-      width: 6px;
+      width: $scrollbar-width;
+      height: $scrollbar-width;
     }
 
     &::-webkit-scrollbar-track {
       background-color: transparent;
-      width: 6px;
+      width: $scrollbar-width;
+      height: $scrollbar-width;
     }
 
     &::-webkit-scrollbar-thumb {
@@ -690,6 +692,10 @@ export default {
     &::-webkit-scrollbar-thumb:active {
       background-color: #5b5c60;
       cursor: grabbing;
+    }
+
+    &::-webkit-scrollbar-corner {
+      background-color: transparent;
     }
 
     &::-webkit-scrollbar-button {
