@@ -700,6 +700,7 @@ export default {
 
     &::-webkit-scrollbar-button {
       height: 0;
+      width: 0;
     }
   }
 }
